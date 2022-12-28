@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* add fontface Esteban from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+
+.view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main,
+.main input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 99vh;
+  overflow: hidden;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main .icon {
+  width: 34px;
+}
+
+.main h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #202123;
+  margin: 16px 0 40px;
+}
+
+.main form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.main input[type="text"] {
+  padding: 12px 16px;
+  border: 1px solid #10a37f;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  outline-color: #10a37f;
+}
+
+.main ::placeholder {
+  color: #8e8ea0;
+  opacity: 1;
+}
+
+.main input[type="submit"] {
+  padding: 12px 0;
+  color: #fff;
+  background-color: #10a37f;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.main .result_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #fff;
+  overflow: hidden;
+  font-family: 'Esteban', serif;
+}
+
+
+
+.main .result_container .result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 40px;
+  z-index: 2;
+  width: fit-content;
+  margin-bottom: 40px;
+  white-space: pre-wrap;
+  background-color: rgba(255, 255, 255, 0.54);
+  border-radius: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+
+
+.poem_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 512px;
+  opacity: 0.2;
+}
+
+.poem_title {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.poem_content {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
